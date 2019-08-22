@@ -180,3 +180,26 @@ hr.socket{
   border-top:.2em solid #666b71;
   margin-top: 3rem;
 }
+
+@media only screen and (max-width : 500px) and (max-height: 890px) {
+  .caption h1{
+  font-size:3.1em;
+  font-weight: 600;
+  letter-spacing: .1.8rem;
+  text-shadow: .1em .1em .5em black;
+  padding-bottom: .3em
+}
+.caption h3{
+  font-size:1.3em;
+  text-shadow: .1em .1em .5em black;
+  padding-bottom:.7em;
+}
+.caption a{
+  font-size: 1.3em;
+  padding-right: .4em;
+  color:#051D2F;
+
+}
+
+
+}
