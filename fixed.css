@@ -135,7 +135,7 @@ margin-right: 0px!important;
 }
 
 
-/*--- iOS Fixed Background Image --*/
+
 .fixed-background {
   position: relative;
   width: 100%;
@@ -196,7 +196,7 @@ hr.socket{
 }
 .caption a{
   font-size: 1.3em;
-  padding-right: .4em;
+  padding-right: .5em;
   color:#051D2F;
 
 }
