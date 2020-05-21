@@ -23,7 +23,7 @@
 			<img src="img/icon.png"></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
 			<span class="navbar-toggler-icon"></span>
-		</button>  
+		</button>
 
 		<div class="collapse navbar-collapse" id="navbarResponsive">
 			<ul class="navbar-nav ml-auto">
@@ -53,9 +53,9 @@
 			<img src="img/background0.jpg" name="background">
 		</div>
 	</div>
-</div>	
+</div>
 
-	<div class="caption text-center">
+	<div class="caption text-center" id="caption">
 		<h1>SUVAB BARAL</h1>
 		<h3>STUDENT . ENGINEER . GALLIVANTER . </h3>
 		<a href="https://www.facebook.com/suvab.baral" target="_blank"><span class="fa fa-facebook"></span></a>
@@ -70,12 +70,12 @@
 	<!-- Note -->
 	<div class="jumbotron col-12 narrow text-center">
 		<h1> ABOUT ME</h1>
-		<p class="lead"> I am a Computer Science and Engineering Student currently in my final year of studies.<br><br>
-		-Particularly interested in Neural Networks, Aritifical Intelligence , Blockchain and Internet of Things.<br><br>
-		-Informally, I am a bibliophile and cinephile,love binge watching shows, football and travelling.
+		<p class="lead"> Computer Science and Engineering Student currently in the final year of studies.<br><br>
+		-Experience in working with Node.js and React Native.<br><br>
+		-Interested in web and mobile application development, automation and neural networks.
 	</p>
 	</div>
-	
+
 	<div id="contact" class="offset">
 	<footer>
 	<div class="row justify-content-center">
@@ -83,11 +83,10 @@
 		<h1><strong> CONTACT INFO: </strong></h1>
 			<h3><strong> SUVAB BARAL </strong></h3>
 			<p class="lead">Computer Science Engineer</p>
-			
-			<p> +91-9894859386 <br><b><i>Email :</b></i><br>bsuvab@yahoo.com <br><br><b><i>Current Residence : </b></i><br>Coimbatore , India <br><br>
-				<b><i>Permanent Residence : </b></i><br> Kathmandu , Nepal 
+
+			<p> +91-9894859386 <br><b><i>Email :</b></i><br>bsuvab@yahoo.com <br>
 			</p>
-	
+
 	<!-- <div class="col-md-6 text-center">
 	<h1><strong>NEW CONTENT</strong></h1>
 	<h2><strong>HED 2</strong>
@@ -97,7 +96,7 @@
 </div>
 
 	<hr class="socket">
-	
+
 	&copy;Suvab Baral. Personal Website.
 
 </div>
@@ -111,7 +110,18 @@
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script>
-	document.background.src="img/background0.jpg";
+	let i=1;
+	function slideshow() {
+		document.background.src = `img/background${i++}.jpg`;
+		if(i==2) {
+			document.getElementById('caption').style.color='white';
+		}
+		else{
+			document.getElementById('caption').style.color='#051D2F';
+		}
+		if(i === 2) i=0;
+	}
+	setInterval(slideshow, 7500);
 </script>
 <!-- <script src="js/jquery-3.3.1.js"></script> -->
 

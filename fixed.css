@@ -16,7 +16,7 @@ body{
 
 .navbar img{
   height: 3.5rem;
-  
+
 }
 .navbar li{
   padding-right: .7rem;
@@ -33,7 +33,7 @@ body{
 
 
 .home-inner{
-  
+
 
 
 }
@@ -83,7 +83,7 @@ margin-right: 0px!important;
   background-size:cover;
   position:center;
   background-repeat: no-repeat;
- 
+
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
   will-change: transform;
